@@ -1,0 +1,53 @@
+\documentclass[11pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\geometry{letterpaper, margin=1in}
+
+\address{
+    Thierry Warin \\
+    HEC Montreal \\
+    CIRANO \\
+    Montreal, QC, Canada \\
+    \texttt{thierry.warin@hec.ca}
+}
+
+\date{\today}
+
+\begin{document}
+
+\begin{letter}{
+    Editor-in-Chief \\
+    Computers, Environment and Urban Systems \\
+    Elsevier
+}
+
+\opening{Dear Editor-in-Chief,}
+
+We are pleased to submit our manuscript titled ``Temporal Graph Modeling for Sparse Maritime Network'' for consideration for publication in \textit{Computers, Environment and Urban Systems}.
+
+This paper presents a computational approach to modeling maritime transportation networks, specifically addressing the challenge of data sparsity in less active yet critical corridors like the Great Lakes--St. Lawrence (GLSL) system. Decision-making in these environments is often hampered by intermittent traffic patterns that standard models fail to capture.
+
+Our work strongly aligns with the aim and scope of \textit{Computers, Environment and Urban Systems}, as it leverages advanced computer-based technologies—specifically Temporal Graph Neural Networks (TGNNs)—to enhance the understanding and management of critical transportation infrastructure. We utilize high-resolution Automatic Identification System (AIS) data to construct a robust spatiotemporal representation of the port network.
+
+Key contributions of our study include:
+\begin{enumerate}
+    \item A specific methodology to mitigate data sparsity through spatial node aggregation and a novel temporal k-core decomposition algorithm.
+    \item An empirical demonstration that the GAT-GRU architecture outperforms state-of-the-art models like Graph WaveNet in sparse settings, challenging the theoretical superiority of strictly convolutional approaches in this context.
+    \item The development of a counterfactual analysis framework that allows decision-makers to simulate the impact of exogenous shocks, thereby supporting resilience assessment and strategic planning.
+\end{enumerate}
+
+We believe this research offers valuable insights for the journal's audience of urban and regional planners, geospatial scientists, and policy analysts interested in the intersection of artificial intelligence, complex systems, and transportation dynamics.
+
+This manuscript describes original work and is not under consideration by any other journal. All authors have approved the manuscript and agree with its submission.
+
+Thank you for receiving our manuscript and considering it for review. We appreciate your time and look forward to your response.
+
+\closing{Sincerely,}
+
+Thierry Warin, PhD \\
+Professor, HEC Montreal \\
+Fellow, CIRANO
+
+\end{letter}
+\end{document}

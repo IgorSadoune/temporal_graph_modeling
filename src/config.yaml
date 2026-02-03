@@ -1,0 +1,89 @@
+test: False
+
+paths:
+  unprocessed_ais_data_path: "./data/ais_o_d.parquet"
+  processed_ais_data_path: "./data/processed_ais_o_d.parquet"
+  graph_sequence_path: "./data/graph_sequence.pt"
+  lstm_metrics_path: "./outputs/lstm_metrics.json"
+  lstm_best_model_path: "./outputs/lstm_best_model.pt"
+  gatgru_metrics_path: "./outputs/gatgru_metrics.json"
+  gatgru_best_model_path: "./outputs/gatgru_best_model.pt"
+  wavenet_metrics_path: "./outputs/wavenet_metrics.json"
+  wavenet_best_model_path: "./outputs/wavenet_best_model.pt"
+  inference_results_path: "./outputs/inference_results.json"
+  counterfactual_results_path: "./outputs/counterfactual_results.json"
+  losses_over_epoch_figure_path: "./outputs/losses_over_epoch.png"
+  inference_result_figure_path: "./outputs/inference_result_figure.png"
+  counterfactual_figure_path: "./outputs/counterfactual_figure.png"
+
+graph:
+  k_core: 1
+  h_threshold: 0.8
+
+training: 
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15  
+  batch_size: 32
+  input_sequence_length: 12           
+  num_epochs: 50          
+  patience: 15                 
+
+lstm:
+  hidden_dim: 64            
+  num_layers: 2                
+  output_dim: 64               
+  aggregation: 'mean'        
+  dropout: 0.2                
+  bidirectional: false         
+  learning_rate: 0.0001         
+  weight_decay: 0.0001         
+  loss_function: 'mse'         
+  optimizer: 'adam'            
+  use_scheduler: true        
+  scheduler_type: 'plateau'    
+  scheduler_factor: 0.5    
+  scheduler_patience: 5  
+  scheduler_step_size: 20
+  gradient_clip: 1.0
+
+gatgru:
+  hidden_dim: 64                 
+  num_gat_layers: 2                  
+  num_gru_layers: 2                 
+  num_heads: 4                       
+  output_dim: 64                     
+  aggregation: 'mean'                
+  dropout: 0.2                       
+  bidirectional: false               
+  use_edge_attr_in_gat: false        
+  learning_rate: 0.0001              
+  weight_decay: 0.00001               
+  loss_function: 'mse'               
+  optimizer: 'adam'                  
+  use_scheduler: true                
+  scheduler_type: 'plateau'          
+  scheduler_factor: 0.5              
+  scheduler_patience: 5              
+  scheduler_step_size: 20            
+  gradient_clip: 1.0         
+
+wavenet:
+  hidden_dim: 64                
+  num_gcn_layers: 2                  
+  num_wavenet_blocks: 4              
+  num_layers_per_block: 2            
+  kernel_size: 2                     
+  output_dim: 64                     
+  aggregation: 'mean'                
+  dropout: 0.2                       
+  learning_rate: 0.0001              
+  weight_decay: 0.0001               
+  loss_function: 'mse'               
+  optimizer: 'adam'                  
+  use_scheduler: true                
+  scheduler_type: 'plateau'          
+  scheduler_factor: 0.5              
+  scheduler_patience: 5              
+  scheduler_step_size: 20            
+  gradient_clip: 1.0  

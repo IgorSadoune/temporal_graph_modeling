@@ -1,0 +1,189 @@
+\documentclass[11pt]{article}
+
+% Language
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}% utf8 characters
+\usepackage[english]{babel}% english language
+
+% Page geometry (from arxiv.sty)
+\usepackage[verbose=true,letterpaper]{geometry}
+\geometry{
+  textheight=9in,
+  textwidth=6.5in,
+  top=1in,
+  headheight=14pt,
+  headsep=25pt,
+  footskip=30pt
+}
+
+% Paragraph settings
+\setlength\parindent{24pt}
+\setlength{\parskip}{0.3em}
+
+% Typography settings (from arxiv.sty)
+\widowpenalty=10000
+\clubpenalty=10000
+\flushbottom
+\sloppy 
+
+% Additional packages
+\usepackage{doi,graphicx,flafter,placeins,hyperref,amsfonts,amsmath,nicefrac,color,soul,longtable,colortbl,setspace,ifthen,xspace,url,pdflscape,amsthm,amssymb,mathtools,tikz,xcolor,rotating,tabularx,multirow,subcaption,enumerate,algorithm,algpseudocode,bm,etoolbox,mwe,booktabs,fancyhdr,pgfplots,appendix}
+
+% Hyperref settings
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=black,
+	%pdftitle={},
+	%bookmarks=true,
+	%pdfpagemode=FullScreen,
+}
+
+% Tikz extensions and global scaling
+\usetikzlibrary{arrows,decorations,backgrounds,calc,fit,shapes,positioning,shapes.geometric,arrows.meta,shapes.misc,decorations.pathreplacing,shadows} 
+\tikzset{
+	global scale/.style={
+		scale=0.6,
+		every node/.style={scale=0.6}
+	}
+}
+
+% Path to figures
+\graphicspath{{./png_files/}}
+
+% Addtional math operators and notations
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\B}{\mathbb{B}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\C}{\mathbb{C}} 
+\newcommand{\R}{\mathbb{R}}
+
+% Math theoretics
+\newtheorem{remark}{Remark}
+\newtheorem{assumption}{Assumption}
+\newtheorem{lemma}{Lemma}
+\newtheorem{claim}{Claim}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+
+% Custom style (non-italic) for examples
+\newtheoremstyle{nonitalic} % Name of the style
+  {}                        % Space above
+  {}                        % Space below
+  {\normalfont}             % Body font (no italics)
+  {}                        % Indent amount
+  {\bfseries}               % Theorem head font (bold)
+  {.}                       % Punctuation after theorem head
+  { }                       % Space after theorem head
+  {}                        % Theorem head spec (empty means 'Example X.')
+\theoremstyle{nonitalic}
+\newtheorem{example}{Example}
+\theoremstyle{nonitalic}
+\newtheorem{definition}{Definition}
+
+% Define custom commands (from arxiv.sty)
+\newcommand{\headeright}{A Preprint}
+\newcommand{\undertitle}{A Preprint}
+\newcommand{\shorttitle}{Temporal Graph Modeling for Sparse Maritime Network}
+
+% Redefine \And command for multiple authors (from arxiv.sty)
+\renewcommand{\And}{%
+  \end{tabular}\vskip 1em \begin{tabular}[t]{c}%
+}
+
+% Redefine \maketitle to handle multiple authors properly (from arxiv.sty)
+\makeatletter
+\renewcommand{\maketitle}{%
+  \par
+  \begingroup
+    \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+    % The footnote-mark was overlapping the footnote-text,
+    % added the following to fix this problem
+    \long\def\@makefntext##1{%
+      \parindent 1em\noindent
+      \hbox to 1.8em{\hss\ensuremath{^{\@thefnmark}}\ }##1
+    }
+    \thispagestyle{empty}
+    \@maketitle
+    \@thanks
+  \endgroup
+  \let\maketitle\relax
+  \let\thanks\relax
+}
+\makeatother
+
+% PDF metadata
+\hypersetup{
+pdftitle={Temporal Graph Modeling For Sparse Maritime Port Network},
+pdfsubject={cs.GT, cs.LG, econ.QM},
+pdfauthor={Igor Sadoune},
+pdfkeywords={},
+}
+
+% Header
+\title{Temporal Graph Modeling for Sparse Maritime Network}
+
+\author{
+    \begin{tabular}[t]{c@{\hskip 1em}c@{\hskip 1em}c}
+    \begin{tabular}[t]{c}
+    Igor Sadoune \\
+    CIRANO\\
+    Montreal, QC, Canada \\
+    \texttt{\small igor.sadoune@cirano.qc.ca}
+    \end{tabular}
+    &
+    \begin{tabular}[t]{c}
+    Martin Trepanier \\
+    Polytechnique Montreal\\
+    CIRRELT\\
+    Montreal, QC, Canada \\
+    \texttt{\small martin.trepanier@polymtl.ca}
+    \end{tabular}
+    &
+    \begin{tabular}[t]{c}
+    Thierry Warin\thanks{Corresponding author}\\
+    HEC Montreal\\
+    CIRANO\\
+    Montreal, QC, Canada \\
+    \texttt{\small thierry.warin@cirano.qc.ca}
+    \end{tabular}
+    \end{tabular}
+}
+% Date
+\date{}
+
+% Override the custom commands as in original
+\renewcommand{\headeright}{}
+\renewcommand{\undertitle}{Title Page}
+\renewcommand{\shorttitle}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\vspace{5cm}
+
+\paragraph{Declaration of Competing Interest.} \textit{The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.}
+\paragraph{Funding.} \textit{This research was supported by Fonds de Recherche du Québec.}
+\paragraph{Acknowledgment.} \textit{We thank Transport Canada for providing the AIS data for the Great Lakes--St. Lawrence region. We are particularly grateful for their extensive work in processing the raw AIS signals into workable datasets, which made this research possible.}
+\paragraph{Data.} \textit{The data used in this paper were obtained and utilized under the conditions of a data sharing agreement prohibiting its public release or redistribution.}
+\paragraph{Corresponding Author Full Address.} \textit{HEC Montréal, 3000, chemin de la Côte-Sainte-Catherine, Montréal (Québec), Canada H3T 2A7}
+\paragraph{Corresponding Author Email Address.} \textit{thierry.warin@hec.ca}
+\paragraph{Corresponding Author Phone Number.} \textit{+1 514 340-6185}
+
+\end{document}

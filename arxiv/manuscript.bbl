@@ -1,0 +1,65 @@
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
+
+\bibitem{Nasiri2017}
+M.~Nasiri, B.~Minaei, and Z.~Sharifi, ``Adjusting data sparsity problem using linear algebra and machine learning algorithm,'' \href{http://dx.doi.org/10.1016/j.asoc.2017.05.042}{{\em Applied Soft Computing} {\bfseries 61} (Dec., 2017) 1153--1159}. \url{https://www.sciencedirect.com/science/article/pii/S1568494617303071}.
+
+\bibitem{Li2023b}
+Y.~Li, Z.~Li, Q.~Mei, P.~Wang, W.~Hu, Z.~Wang, W.~Xie, Y.~Yang, and Y.~Chen, ``Research on {Multi}-{Port} {Ship} {Traffic} {Prediction} {Method} {Based} on {Spatiotemporal} {Graph} {Neural} {Networks},'' \href{http://dx.doi.org/10.3390/jmse11071379}{{\em Journal of Marine Science and Engineering} {\bfseries 11} no.~7, (July, 2023) 1379}. \url{https://www.mdpi.com/2077-1312/11/7/1379}.
+
+\bibitem{seaway}
+``Economic {Impacts}.''
+\newblock \url{https://greatlakes-seaway.com/en/the-seaway/economic-impacts/}.
+
+\bibitem{Wu2019}
+Z.~Wu, S.~Pan, G.~Long, J.~Jiang, and C.~Zhang, ``Graph {WaveNet} for {Deep} {Spatial}-{Temporal} {Graph} {Modeling},'' \href{http://dx.doi.org/10.48550/arXiv.1906.00121}{{\em arXiv e-prints} (May, 2019) arXiv:1906.00121}. \_eprint: 1906.00121.
+
+\bibitem{velickovic2018graph}
+P.~Veli{\v{c}}kovi{\'c}, G.~Cucurull, A.~Casanova, A.~Romero, P.~Li{\`o}, and Y.~Bengio, ``Graph attention networks,'' in {\em International Conference on Learning Representations}.
+\newblock 2018.
+
+\bibitem{cho2014learning}
+K.~Cho, B.~Van~Merri{\"e}nboer, C.~Gulcehre, D.~Bahdanau, F.~Bougares, H.~Schwenk, and Y.~Bengio, ``Learning phrase representations using rnn encoder-decoder for statistical machine translation,'' in {\em Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)}, pp.~1724--1734.
+\newblock 2014.
+
+\bibitem{hochreiter1997}
+S.~Hochreiter and J.~Schmidhuber, ``Long {Short}-{Term} {Memory},'' \href{http://dx.doi.org/10.1162/neco.1997.9.8.1735}{{\em Neural Comput.} {\bfseries 9} no.~8, (Nov., 1997) 1735--1780}. \url{https://doi.org/10.1162/neco.1997.9.8.1735}.
+
+\bibitem{Wang2022}
+S.~Wang, Y.~Lv, P.~Yuan, X.~Piao, and Y.~Zhang, ``Metro {Traffic} {Flow} {Prediction} via {Knowledge} {Graph} and {Spatiotemporal} {Graph} {Neural} {Network},'' \href{http://dx.doi.org/10.1155/2022/2348375}{{\em Journal of Advanced Transportation} {\bfseries 2022} (2022) }. \url{https://login.proxy2.hec.ca/login?url=https://www.proquest.com/scholarly-journals/metro-traffic-flow-prediction-via-knowledge-graph/docview/2720246630/se-2?accountid=11357}.
+
+\bibitem{Huo2024}
+G.~Huo, Y.~Zhang, Y.~Lv, H.~Ren, and B.~Yin, ``Urban {Traffic} {Flow} {Forecasting} {Based} on {Graph} {Structure} {Learning},'' \href{http://dx.doi.org/10.1155/atr/7878081}{{\em Journal of Advanced Transportation} {\bfseries 2024} (2024) }. \url{https://login.proxy2.hec.ca/login?url=https://www.proquest.com/scholarly-journals/urban-traffic-flow-forecasting-based-on-graph/docview/3151793912/se-2?accountid=11357}.
+
+\bibitem{Huang2024}
+L.~Huang, J.~Qin, and T.~Wu, ``Multisource {Data} {Fusion} {With} {Graph} {Convolutional} {Neural} {Networks} for {Node}‐{Level} {Traffic} {Flow} {Prediction},'' \href{http://dx.doi.org/10.1155/atr/7109780}{{\em Journal of Advanced Transportation} {\bfseries 2024} no.~1, (Jan., 2024) 7109780}. \url{https://onlinelibrary.wiley.com/doi/10.1155/atr/7109780}.
+
+\bibitem{Yuan2025}
+X.~Yuan and X.~He, ``Enhancement {Strategy} for {Port} {Resilience}: {Shipping} {Route} {Optimization} {Methods} {Based} on {Network} {Characteristics} of {Ports},'' \href{http://dx.doi.org/10.3390/jmse13020325}{{\em Journal of Marine Science and Engineering} {\bfseries 13} no.~2, (Feb., 2025) 325}. \url{https://www.mdpi.com/2077-1312/13/2/325}.
+
+\bibitem{Yuan2021}
+R.~Yan, S.~Wang, L.~Zhen, and G.~Laporte, ``Emerging approaches applied to maritime transport research: {Past} and future,'' \href{http://dx.doi.org/10.1016/j.commtr.2021.100011}{{\em Communications in Transportation Research} {\bfseries 1} (Dec., 2021) 100011}. \url{https://www.sciencedirect.com/science/article/pii/S2772424721000111}.
+
+\bibitem{Liang2022}
+M.~Liang, R.~W. Liu, Y.~Zhan, H.~Li, F.~Zhu, and F.-Y. Wang, ``Fine-{Grained} {Vessel} {Traffic} {Flow} {Prediction} {With} a {Spatio}-{Temporal} {Multigraph} {Convolutional} {Network},'' \href{http://dx.doi.org/10.1109/TITS.2022.3199160}{{\em IEEE Transactions on Intelligent Transportation Systems} {\bfseries 23} no.~12, (Dec., 2022) 23694--23707}. \url{https://ieeexplore.ieee.org/document/9868210/}.
+
+\bibitem{Zhang2025}
+F.~Zhang, Y.~Wen, O.~Valdez~Banda, M.~Chen, and L.~Du, ``Maritime traffic network extraction and vessel flow prediction in complex inland port clusters,'' \href{http://dx.doi.org/10.1016/j.oceaneng.2025.122791}{{\em Ocean Engineering} {\bfseries 341} (Dec., 2025) 122791}. \url{https://linkinghub.elsevier.com/retrieve/pii/S0029801825024746}.
+
+\bibitem{Zhao2022}
+C.~Zhao, X.~Li, M.~Zuo, L.~Mo, and C.~Yang, ``Spatiotemporal dynamic network for regional maritime vessel flow prediction amid {COVID}-19,'' \href{http://dx.doi.org/10.1016/j.tranpol.2022.09.029}{{\em Transport Policy} {\bfseries 129} (Dec., 2022) 78--89}. \url{https://linkinghub.elsevier.com/retrieve/pii/S0967070X22002797}.
+
+\bibitem{scarselli2009graph}
+F.~Scarselli, M.~Gori, A.~C. Tsoi, M.~Hagenbuchner, and G.~Monfardini, ``The graph neural network model,'' {\em IEEE Transactions on Neural Networks} {\bfseries 20} no.~1, (2009) 61--80.
+
+\bibitem{wu2021comprehensive}
+Z.~Wu, S.~Pan, F.~Chen, G.~Long, C.~Zhang, and S.~Y. Philip, ``A comprehensive survey on graph neural networks,'' {\em IEEE Transactions on Neural Networks and Learning Systems} {\bfseries 32} no.~1, (2021) 4--24.
+
+\bibitem{yu2018spatio}
+B.~Yu, H.~Yin, and Z.~Zhu, ``Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting,'' in {\em Proceedings of the 27th International Joint Conference on Artificial Intelligence}, pp.~3634--3640.
+\newblock 2018.
+
+\bibitem{alvarez2005}
+J.~I. Alvarez-Hamelin, L.~Dall'Asta, A.~Barrat, and A.~Vespignani, ``k-core decomposition: a tool for the visualization of large scale networks,'' Oct., 2005.
+\newblock \url{http://arxiv.org/abs/cs/0504107}. arXiv:cs/0504107.
+
+\end{thebibliography}\endgroup
